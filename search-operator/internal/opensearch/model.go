@@ -126,10 +126,6 @@ type ModelRef struct {
 	Name string
 }
 
-func (r ModelRef) isZero() bool {
-	return strings.TrimSpace(r.ID) == "" && strings.TrimSpace(r.Name) == ""
-}
-
 // SemanticModels holds the ML model IDs used by semantic field mappings.
 type SemanticModels struct {
 	// ModelID generates embeddings from field values at ingest time and, unless
